@@ -1,0 +1,118 @@
+{
+  margin 0px;
+  padding 0px;
+}
+
+/*Barra de navegacion*/
+nav {
+  background-color: #282828;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 10px 50px 10px 10px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+/*
+nav div selecciona todos los divs dentro de nav
+nav > div selecciona solos los divs hijos directos de nav
+Las pseudoclases manejan el estado de un elemento
+hover se activa cuando el mouse pasa por encima del elemento
+active se activa cuando el elemento es presionado
+focus se activa cuando el elemento es seleccionado
+visited se activa cuando el elemento es visitado
+link se activa cuando el elemento es un link
+first-child se activa cuando el elemento es el primer hijo de su padre
+last-child se activa cuando el elemento es el último hijo de su padre
+*/
+
+  nav div a:visited,nav div a:link {
+  color: white;
+  text-decoration: none;
+  }
+
+  .enlace:hover {
+    color: burlywood;
+  }
+
+
+  /
+  #inicio:hover, #introduccion:hover {
+    color: rgb(213, 213, 213);
+    font-weight: 600; 
+  }
+
+  nav div { 
+    display: flex;
+    gap: 30px;
+  }
+  */
+  /  
+  nav div a {
+    margin 20px;
+  }
+
+
+  /* MAIN */
+  
+  main  {
+    height: 80vh;
+    min-height: 70vh;
+    background-color: rgb(0, 0, 0) ;
+    background: linear-gradient (to right, #0d37f4, #6783ff);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+    /*height: 80vh;
+    min-height: 70vh;
+    background-color: beige;
+  }
+  */
+  
+  /* GRID es un tipo de display que permite manejar
+  un sitema de filas y columnas */
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: 500px;*/
+    /* eje principal */
+    justify-items: center;
+    /* eje secundario */
+    align-content: center;
+    align-items: center;
+  }
+
+
+  header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  
+   /* Animacion */
+
+   .gradient-background {
+  background: linear-gradient(300deg,deepskyblue,darkviolet,blue,#2effff);
+  background-size: 240% 240%;
+  animation: gradient-animation 24s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} 
